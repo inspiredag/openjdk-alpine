@@ -28,10 +28,16 @@ This image is based on the official `openjdk:8-jre-alpine` image and runs as a n
 |  PKCS12_PASSWORD      | Password of server.p12. Defaults to `""` (empty string).            |
 |  PKCS12_ALIAS         | Alias of PrivateKeyEntry in server.p12. Defaults to `servercert`.   |
 
+### Application Binary
+
 One can use **/opt/app-root/bin** (env `APP_ROOT`) to place and run its **.jar**
 file.
 
+### Persistent Data
+
 For persistent data the folder **/persistent** (env `PERSISTENCE_ROOT`) is foreseen.
+
+### SSL Certificates
 
 Under **/certificates** (env `CERTIFICATES_ROOT`) a set of certificates is stored,
 that can be used for Development. The certificates are valid for the domain
