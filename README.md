@@ -2,7 +2,7 @@
 
 This image is based on the official `openjdk:8-jre-alpine` image and runs as a non-root user.
 
-## Configuration
+## Configuration
 
 | Path                           | Description                                        |
 |------                          |-------------                                       |
@@ -47,7 +47,7 @@ password was specified, an empty string will be used as password. You might also
 want to specify the alias used to store the private key entry with `PKCS12_ALIAS`
 so that an application can access the private key if it was addded to the keystore.
 
-## How to use
+## How to use
 
 Add your *.jar* file from your project
 
